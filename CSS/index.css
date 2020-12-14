@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #eedbd2;
+  }
+
+  .topnav img {
+    float: left;
+    max-height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #5a3d32;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    text-decoration: underline;
+    color: #5a3d32;
+  }
+  
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "content contentImage"
+    ;
+  }
+  /* Style the content */
+  .content {
+    background-color: none;
+    padding: 50px;
+  }
+  .contentImage img {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    left: 800px;
+    top: 120px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 220px;
+  }
+
+  .content h2{
+    font-family: 'Vollkorn', serif;
+    color: #c08269;
+    }
+.content p{
+    font-family: 'Montserrat', sans-serif;
+}
+  /* Style the footer */
+  .footerLinks {
+    padding-top: 25px;
+    margin-left: 40px;
+    float: absolute;
+      }
+.footerLinks a{
+    display: block;
+    color: #5a3d32;
+    text-align: left;
+    text-decoration: none;
+    font-size: 11px;
+}
+.footerCopyright p{
+    font-family: 'Montserrat', sans-serif;
+    color: #5a3d32;
+    font-size: 11px;
+    text-align: center;
+    padding-top: 25px;
+}
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+.footerSocial img{
+    max-height: 30px;
+    Padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 25px;
+    float: right;
+}
+
+#footerGrid {
+    background-color: #f1f1f1;
+    float: absolute;
+    display: grid;
+    height: 100px;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "footerLinks footerCopyright footerSocial"
+    ;
+  }
