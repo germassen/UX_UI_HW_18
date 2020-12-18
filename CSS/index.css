@@ -18,7 +18,8 @@ body {
     max-height: 40px;
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
+    padding-left: 30px;
   }
   
   /* topnav links */
@@ -27,7 +28,7 @@ body {
     display: block;
     color: #5a3d32;
     text-align: center;
-    padding: 25px 16px;
+    padding: 25px 30px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
   }
@@ -41,7 +42,7 @@ body {
   /* whole top part */
   .topPart {
 position: static;
-width: 1440px;
+width: auto;
 height: 700px;
 left: 0px;
 top: 50px;
@@ -117,12 +118,10 @@ display: grid;
 }
 
 .userResearch img{
-  width: 65px;
+  /* width: 65px; */
   height: auto;
   /* border: solid 1px red; */
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom 15px;
+  margin: 10px;
 }
 
 .userResearch {
@@ -131,10 +130,10 @@ display: grid;
 }
 
 .wireframe img{
-  width: 58px;
+  /* width: 58px; */
   height: auto;
   /* border: solid 1px red; */
-  margin: 20px;
+  margin: 10px;
 }
 
 .wireframe {
@@ -143,10 +142,10 @@ display: grid;
 }
 
 .visual img{
-  width: 58px;
+  /* width: 58px; */
   height: auto;
   /* border: solid 1px red; */
-  margin: 20px;
+  margin: 10px;
 }
 
 .visual {
@@ -155,10 +154,10 @@ display: grid;
 }
 
 .code img{
-  width: 51px;
+  /* width: 51px; */
   height: auto;
   /* border: solid 1px red; */
-  margin: 25px;
+  margin: 10px;
 }
 
 .code {
@@ -168,10 +167,10 @@ display: grid;
 
 
 .copy img{
-  width: 65px;
+  /* width: 65px; */
   height: auto;
   /* border: solid 1px red; */
-  margin: 20px;
+  margin: 10px;
 }
 
 .copy {
@@ -191,12 +190,14 @@ display: grid;
 .workGrid {
   display: grid;
   grid-row-gap: 100px;
+  border: 1px solid rgb(209, 37, 180);
 }
 
 .myWork h1{
   font-family: 'Vollkorn', serif;
   color: #c08269;
   font-size: 20px;
+  /* border: 1px solid green; */
 }
 
 .workItems img {
@@ -206,11 +207,11 @@ display: grid;
 .myWork {
   /* border: 1px solid red; */
 display: block;
-width: 800px;
+width: 1000px;
 margin-left: 150px;
 /* margin-top: 50px; */
 padding-top: 10px;
-grid-gap: 1em;
+/* grid-gap: 1em; */
 padding-left: 1em;
 height: 1500px;
 }
@@ -218,7 +219,8 @@ height: 1500px;
 .work1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* border: solid 1px orange; */
+  /* border: solid 1px yellowgreen; */
+  width: 100%;
 }
 
 .workItems {
@@ -235,9 +237,16 @@ height: 1500px;
   display: grid;
   }
 .description h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Vollkorn', serif;
   color: #5a3d32;
   font-size: 20px;
+}
+
+.description h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #5a3d32;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .description p {
@@ -254,9 +263,8 @@ border-radius: 15px;
 border: 0px;
 float: right;
 font-family: 'Montserrat', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
+font-weight: 700;
+font-size: 12px;
 text-align: center;
 color: #5A3D32;
 }
@@ -296,7 +304,7 @@ ul {
 }
 
 #footerGrid {
-  position: fixed;
+  /* position: sitcky; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -307,4 +315,65 @@ ul {
   grid-template-areas:
     "footerLinks footerCopyright footerSocial"
     ;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #heroGrid {
+      /* border: 1px solid blue; */
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 50px;
+      margin-top: 50px;
+      padding-top: 75px;
+      grid-gap: 1em;
+      Position: static;
+    }
+
+    .contentImage img{
+      width: 200px;
+      height: 200px;
+      margin-left: 75px;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+      border-radius: 220px;
+    }
+
+    .skillContainer {
+      /* margin: 0px 5%;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-gap: 1em;
+      grid-auto-rows: minmax(100px, auto) */
+      /* border: 1px solid purple; */
+      /* display: inline; */
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1em;
+      width: 400px;
+      display: grid;
+      float: left;
+      }
+
+      .topPart {
+        position: static;
+        width: auto;
+        height: 1100px;
+        left: 0px;
+        top: 50px;
+        background: #E3CCC0;
+          }
+          .work1 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            /* border: solid 1px yellowgreen; */
+            width: 100%;
+          }
+
+          .myWork {
+          height: 2200px;
+          }
+          .workItems {
+            grid-template-rows: repeat(1, 1fr);
+            grid-gap: 2em;
+            width: 300px;
+            display: grid;
+            }
   }
